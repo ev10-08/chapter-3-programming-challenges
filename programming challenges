@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int lP,iS,gS,oL,tR,mN,ttl,yR;
+    
+    cout << "This program calculates the monthly and annual costs for ";
+    cout << "automobile expenses.\n"; //explaining to the user the intended use for the program
+    cout << "How much are your monthly loan payments? "; //asks the user for how much they spend on monthly loan payments
+    cin >> lP; //user input for monthly loan costs
+    cout << "How much is your monthly insurance payments? "; //asks the user for how much they spend on monthly insurance payments
+    cin >> iS; //user input for monthly insurance costs
+    cout << "How much do you spend on gas monthly? "; //asks the user for how much they spend on gas monthly
+    cin >> gS; //user input for monthly gas costs
+    cout << "How much do you spend on oil monthly? "; //asks the user for how much they spend on oil monthly
+    cin >> oL; //user input for monthly oil costs
+    cout << "How much do you spend on your tires monthly? "; //asks the user for how much they spend on their tires monthly
+    cin >> tR; //user input for monthly tire costs
+    cout << "How much do you spend for your car maintenance? "; //asks the user for how much they spend on maintaining their car monthly
+    cin >> mN; //user input for monthly maintenance costs
+    ttl = lP + iS + gS + oL + tR + mN; //adds up total monthly costs for a grand total.
+    yR = ttl * 12; //multiplies total monthly costs by twelve to get an annual total.
+    cout << "Your total amount spent on your automobile monthly is " << ttl << ".\n"; //displays monthly automobile costs
+    cout << "Your total amount spent on your automobile annualy is " << yR << ".\n"; //displays annual automobile costs
+    return 0;
+}
